@@ -11,6 +11,7 @@ Taskmate is a cross-platform desktop application that allows SUSTech students, t
 - **Program Language:** rust, Vue, HTML, CSS, SCSS, TypeScript, JavaScript
 - **Technology Stack:** Tauri
 - **Package Manager:** *Cargo* for Rust and *pnpm* for Vue
+- **Version Control:** GitHub
 - **How to Run the Program:** 
   - Install Rust and configure Tauri in your local machine.
   - Install npm and run `npm install pnpm` to install pnpm in your local machine.
@@ -104,10 +105,12 @@ base64 = "0.21.0"
 - `src-tauri` Backend files (Rust Cargo project)
 - `tests` Frontend test files
 
+Others are configuration files.
+
 
 ### 5. API
 
-#### 5.1. Rust
+#### 5.1 Rust
 
 #### 5.1.1 Basic Methods
 
@@ -124,7 +127,7 @@ base64 = "0.21.0"
 - `pub fn download_file(url: &str, file_path: &str, file_name: &str) -> Result<(), String>`: Download files from the cloud server to the *AppData* path.
 - `pub fn reg_url_protocol() -> Result<(), String>`: Open Taskmate from the browser.
 
-#### 2. TypeScript
+#### 5.2 TypeScript
 
 #### 5.2.1 Interface
 
@@ -164,10 +167,22 @@ base64 = "0.21.0"
 - `async function getEntries(classId: string)`: Get all entries from a particular class ID.
 - `async function uploadFile(classId: string, problemId: string, entryId: string, files: UploadFile[])`: Upload files to the server.
 - `async function returnSubmission(submissionName: string, score: number, comment?: string, metrics?: { [key: string]: number; })`: Return the score and comment of a submission.
-- `async function sendNote(classId: string, entryId: string, note: string)`: Send message for calculating a particular assignment/submission.
+- `async function sendNote(classId: string, entryId: string, note: string)`: Send messages for calculating a particular assignment/submission.
 
-### 6. Version Control
+### 6. Versions
+
+- [v0.1.3](https://github.com/sustech-taskmate/Taskmate/releases/edit/v0.1.3)
+
+![](fig/v0_1_3.png)
+
+- [v0.1.2](https://github.com/sustech-taskmate/Taskmate/releases/tag/v0.1.2)
+
+![](fig/v0_1_2.png)
+
+- [v0.1.1](https://github.com/sustech-taskmate/Taskmate/releases/tag/v0.1.1)
+
+![](fig/v0_1_1.png)
 
 - [v0.1.0](https://github.com/sustech-taskmate/Taskmate/releases/tag/v0.1.0)
-- [v0.1.1](https://github.com/sustech-taskmate/Taskmate/releases/tag/v0.1.1)
-- [v0.1.2](https://github.com/sustech-taskmate/Taskmate/releases/tag/v0.1.2)
+
+![](fig/v0_1_0.png)
