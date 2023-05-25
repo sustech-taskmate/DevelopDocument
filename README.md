@@ -150,6 +150,22 @@ base64 = "0.21.0"
 - `interface EntriesResponse`: The transfer object holding all returned entries from the server.
 - `interface UploadFile`: The interface for the uploader file.
 
+#### 5.2.2 Method
+
+- `async function login(token: string)`: Login by http://spaces.sustech.cloud.
+- `async function logout()`: Logout from http://spaces.sustech.cloud.
+- `async function getClassbyId(classId: string)`: Get a class interface from a particular class ID from the server.
+- `async function getClasses()`: Get all class interfaces from the server.
+- `async function getAssignments(classId: string)`: Get assignments from a particular class ID from the server.
+- `async function getEntry(classId: string, entryId: string)`: Get a particular entry interface based on a particular class ID and a particular entry ID.
+- `async function getCurrentUserSubmissions(classId: string, entryId: string)`: Get all submissions based on a particular class ID and a particular entry ID.
+- `async function getSubmissions(classId: string)`: Get all submissions based on a particular class ID.
+- `async function getSubmissionInfo(submissionName: string)`: Get all submissions based on a submission name.
+- `async function getEntries(classId: string)`: Get all entries from a particular class ID.
+- `async function uploadFile(classId: string, problemId: string, entryId: string, files: UploadFile[])`: Upload files to the server.
+- `async function returnSubmission(submissionName: string, score: number, comment?: string, metrics?: { [key: string]: number; })`: Return the score and comment of a submission.
+- `async function sendNote(classId: string, entryId: string, note: string)`: Send message for calculating a particular assignment/submission.
+
 ### 6. Version Control
 
 - [v0.1.0](https://github.com/sustech-taskmate/Taskmate/releases/tag/v0.1.0)
