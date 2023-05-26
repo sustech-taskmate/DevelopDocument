@@ -13,10 +13,35 @@ Taskmate is a cross-platform desktop application that allows SUSTech students, t
 - **Package Manager:** *Cargo* for Rust and *pnpm* for Vue
 - **Version Control:** GitHub
 - **How to Run the Program:** 
-  - Install Rust and configure Tauri in your local machine.
-  - Install npm and run `npm install pnpm` to install pnpm in your local machine.
-  - To run the project in the development environment, open the project first, enter the root path, then type `pnpm tauri dev` in the cmd.
-  - To build the whole project, open the project first, enter the root path, then type `tauri build` in the cmd.
+
+  ## Develop
+
+  ```shell
+  # skip if you already have pnpm installed
+  $ npm i -g pnpm
+  
+  # install dependencies
+  $ pnpm install
+  
+  # development
+  $ pnpm tauri dev
+  ```
+
+  ## Test
+
+  ```shell
+  # run unit test
+  $ pnpm test:unit
+  
+  # run ts test
+  $ pnpm test
+  ```
+
+  ## Build
+  ```shell
+  # build application on current os
+  $ pnpm tauri build
+  ```
 
 ### 3. Project Dependencies
 
@@ -37,7 +62,6 @@ walkdir = "2.3.3"
 url = "2.3.1"
 tauri-plugin-deep-link = "0.1.1"
 mime = "0.3.17"
-base64 = "0.21.0"
 ```
 
 - **tauri**: An open-source toolkit that aims to provide developers with a simple way to build desktop applications, supporting the use of web technologies (HTML/CSS/JS) to construct native GUI applications that are cross-platform (Windows/macOS/Linux).
@@ -53,28 +77,25 @@ base64 = "0.21.0"
 - **url**: A library for handling URLs.
 - **tauri-plugin-deep-link**: A plugin that provides deep link support for the Tauri framework.
 - **mime**: A MIME file type recognition library that returns inferred MIME types based on file names or extensions.
-- **base64**: A library that provides Base64 encoding and decoding functionality.
 
 #### 3.2 pnpm
 
 ```json
-"@kangc/v-md-editor": "^2.1.7"
-"@tauri-apps/api": "^1.2.0"
-"@vueuse/core": "^9.13.0"
-"crypto-js": "^4.1.1"
-"echarts": "^5.4.2"
-"element-plus": "^2.3.0"
-"lodash": "^4.17.21"
-"moment": "^2.29.4"
-"next": "^13.4.3"
-"pinia": "^2.0.34"
-"pnpm": "^7.29.1"
-"prismjs": "^1.29.0"
-"vue": "^3.2.47"
-"vue-pdf-embed": "^1.1.6"
+"@kangc/v-md-editor": "^2.1.7",
+"@tauri-apps/api": "^1.2.0",
+"@vueuse/core": "^9.13.0",
+"crypto-js": "^4.1.1",
+"echarts": "^5.4.2",
+"element-plus": "^2.3.0",
+"lodash": "^4.17.21",
+"moment": "^2.29.4",
+"next": "^13.4.3",
+"pinia": "^2.0.34",
+"pnpm": "^7.29.1",
+"prismjs": "^1.29.0",
+"vue": "^3.2.47",
+"vue-pdf-embed": "^1.1.6",
 "vue-router": "^4.1.6"
-"vue-template-compiler": "^2.7.14"
-"vuex": "^4.1.0"
 ```
 
 - **@kangc/v-md-editor**: A visual editor for rendering Markdown inside a Vue application.
